@@ -1,0 +1,21 @@
+
+#ymal 中优先使用的是根项目下面的config下面的application.ymal  其次是项目目录下面的application.ymal
+#其次是resources 目录下面的config下面的application.ymal文件 其次是resources目录下面的ymal文件
+# 再有就是如果优先级高的ymal中没有配置所需要的参数，会使用优先级其次中查询有的话使用，如果多个ymal文件中都有
+#该参数  使用优先级高的ymal的配置参数
+Server:
+  port: 8083
+
+persion:
+  name: "JamsYang_config"
+  age: 37
+  email: yangjianjava@163.com
+  list:
+    - "游泳"
+    - "健身"
+  map:
+    key1: value1
+    key2: value2
+  son:
+    name: "xiaohulu_config"
+    age: 2.5f

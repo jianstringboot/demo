@@ -1,0 +1,38 @@
+Server:
+  port: 8083
+
+spring:
+  application:
+    name: service-consumer
+  cloud:
+   nacos:
+    discovery:
+      server-addr: 127.0.0.1:8880
+
+     # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306
+    username: root  # 你的 MySQL 用户名
+    password: '!@Cg20160504.com'  # 你的 MySQL 密码
+  # MyBatis-Plus 配置
+mybatis-plus:
+  configuration:
+    # 开启 SQL 日志打印（方便调试）
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 实体类别名包（可选）
+    type-aliases-package: com.example.logindemo.dao
+
+persion:
+  name: "JamsYang"
+  age: 37
+  list:
+    - "游泳"
+    - "健身"
+  map:
+    key1: value1
+    key2: value2
+  son:
+    name: "xiaohulu"
+    age: 2.5f
+
